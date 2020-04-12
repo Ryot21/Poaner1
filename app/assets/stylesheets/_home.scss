@@ -1,0 +1,47 @@
+
+.bg-video-wrap {
+  position  : relative;
+  overflow  : hidden;
+  display   : flex;
+  width     : 100%;
+  height    : 100vh; 
+  background: url("/assets/%202020-03-08%2012.31.36.png") no-repeat center center/cover;
+  video {
+    min-width : 100%;
+    min-height: 100vh;
+    z-index   : 1;
+  }
+}
+
+.overlay {
+  width           : 100%;
+  height          : 100vh;
+  position        : absolute;
+  top             : 0;
+  left            : 0;
+  background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+  background-size : 3px 3px;
+  z-index         : 2;
+  .top-logo {
+    position  : absolute;
+    top       : 100px;
+    left      : 0;
+    right     : 0;
+    margin    : auto;
+  }
+}
+.account {
+  height              : 50px;
+  width               : 100%;
+  bottom              : 200px;
+  line-height         : 50px;
+  padding-inline-start: 0;
+  text-transform      : uppercase;
+  justify-content     : space-around;
+  position            : absolute;
+  display             : flex;
+  margin              : auto;
+  list-style          : none;
+  z-index             : 3;
+
+}

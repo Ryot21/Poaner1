@@ -1,0 +1,8 @@
+<div class="contents">
+  <div class="post">
+    <% @posts.each do |post| %>
+      <%# 切り取り部分テンプレート _post.html.erbに移動 %>
+      <%= render partial: "post", locals: { post: post } %>
+    <% end %>
+   </div>
+</div>

@@ -1,0 +1,16 @@
+header {
+  height: 90px;
+  .container {
+    line-height: 90px;
+    nav {
+      ul {
+        line-height: 90px;
+        list-style: none;
+        a {
+          padding-right: 20px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+#sns {
+  background: #FAF7F0;
+  .wrapper {
+    display: flex;
+    padding: 0 100px;
+    justify-content: space-between;
+    .sns-box {
+      padding-top: 0 10px 0 10px;
+      .sns-title {
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+  

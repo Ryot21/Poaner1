@@ -6,11 +6,13 @@ header {
     padding : 0;
     display: flex;
     position: relative;
-    img {
-      height : auto; 
-      width  : 120px;
+    a {
+      text-decoration: none;
       margin-right: 0;
-      padding-top : 10px;
+      img {
+        height : auto; 
+        width  : 120px;
+      }
     }
     nav {
       position: absolute;

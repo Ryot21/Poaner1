@@ -1,7 +1,8 @@
 <div class="bg-video-wrap">
-  <video src="/assets/IMG_4056.MOV" loop muted autoplay></video>
+  <%# <video src="/assets/IMG_4056.MOV" loop muted autoplay></video> %>
+  <%= video_tag asset_path("IMG_4056.MOV", :autoplay => true, :loop => true) %>
     <div class="overlay">
-        <img src = "/assets/Poaner%203.png" alt="Applogo" class="top-logo"  >
+        <%= image_tag asset_path("Poaner3.png", alt: "applogo", :id => "logo") %>
     <ul class="account">
         <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
     </ul>

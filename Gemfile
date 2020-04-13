@@ -83,3 +83,6 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'gravtastic'
 gem 'carrierwave'
 gem 'rmagick'
+
+# s3に保存先を変える
+gem 'fog-aws'

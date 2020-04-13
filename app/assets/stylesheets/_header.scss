@@ -1,8 +1,22 @@
 header {
   height: 90px;
+  line-height: 90px;
   .container {
-    line-height: 90px;
+    width: 1170px;
+    padding : 0;
+    display: flex;
+    position: relative;
+    a {
+      text-decoration: none;
+      margin-right: 0;
+      img {
+        height : auto; 
+        width  : 120px;
+      }
+    }
     nav {
+      position: absolute;
+      right: 0;
       ul {
         line-height: 90px;
         list-style: none;

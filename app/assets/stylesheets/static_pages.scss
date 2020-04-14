@@ -41,7 +41,7 @@
   grid-template-columns: 33% 33% 33%;
   grid-auto-flow: dense;
   .My-image1 {
-    &__item {
+    img {
       height: auto;
       width: 100%;
     }
@@ -62,13 +62,13 @@
     }
   }
   .My-image4 {
-    &__item {
+    img {
       height: auto;
       width: 100%;
     }
   }
   .My-image5 {
-    &__item {
+    img {
       height: auto;
       width: 282px;
     }

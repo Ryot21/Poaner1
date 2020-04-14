@@ -48,14 +48,14 @@
   }
   .My-movie2 {
     grid-row: span 2; grid-column: span 2;
-    video {
+    .video {
       height: auto;
       width: 762px;
     }
   }
   .My-movie3 {
     grid-row: span 1; grid-column: span 1;
-    &__item {
+    .video {
       height: auto;
       width : 100%;
       z-index   : 1;

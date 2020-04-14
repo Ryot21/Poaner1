@@ -5,7 +5,7 @@
         <% if post.image? %>
           <%= image_tag post.image.url, size: 53 %>
         <% else %>
-          <%= image_tag asset_path("No Image.png", size: 53) %>
+          <%= image_tag asset_path("No Image.png", :size => 53) %>
         <% end %>
       </div>
     </div>

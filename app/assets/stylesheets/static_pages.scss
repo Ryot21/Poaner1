@@ -48,9 +48,9 @@
   }
   .My-movie2 {
     grid-row: span 2; grid-column: span 2;
-    &__item {
-    height: auto;
-    width: 762px;
+    video {
+      height: auto;
+      width: 762px;
     }
   }
   .My-movie3 {

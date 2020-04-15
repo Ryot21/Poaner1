@@ -5,12 +5,9 @@
     </div>
     <div class="postImage">
     </div>
-
     <div class="postDate">
         <%= @post.created_at %>
     </div>
-
-
     <% if logged_in? && current_user.id == @post.user_id %>
         <div class="postManage">
           <%= link_to "編集", edit_post_path(@post.id), class: "postManage__edit" %>

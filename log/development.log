@@ -72054,3 +72054,4 @@ DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from 
 DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/ryotamaeda/projects/Poaner1/config/initializers/carrierwave.rb:7)
 DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/ryotamaeda/projects/Poaner1/config/initializers/carrierwave.rb:7)
 DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/ryotamaeda/projects/Poaner1/config/initializers/carrierwave.rb:7)
+DEPRECATION WARNING: #fog_provider is deprecated and has no effect (called from block in <top (required)> at /Users/ryotamaeda/projects/Poaner1/config/initializers/carrierwave.rb:7)

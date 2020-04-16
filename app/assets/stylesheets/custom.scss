@@ -60,7 +60,6 @@ textarea {
   min-height: 100%;
   width : 100vw;
   .contents{
-    height          :calc(100% - 100px);
     width           : 100vw;
     overflow        : scroll;
     &__inner {

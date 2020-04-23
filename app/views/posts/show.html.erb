@@ -35,8 +35,7 @@
         </div>
         <br />
       <% end %>
-    </div>
-    <% if logged_in? %>
+      <% if logged_in? %>
       <%= form_with(model: [@post, @comment], local: true) do |f| %>
         <%= f.text_area :content, class: "form-control", rows: 5, placeholder: "コメントを記入してください" %>
         <%= button_tag type: "submit", class: "btn btn-success float-right mt-1" do %>
@@ -44,5 +43,6 @@
         <% end %>
       <% end %>
     <% end %>
+    </div>
   </div>
 <div>

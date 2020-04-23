@@ -20,20 +20,29 @@
     </div>
     
     <h2>コメント一覧</h2>
-    <% @comments.each do |comment| %>
-    <%= comment.user.name %>
-    <%= comment.content %>
-    <%= link_to '削除', post_comment_path(@post, comment), method: :delete %>
-    <% end %>
-
-    <%= form_with model: [@post, @comment], local: true do |f| %>
-      <%= render 'shared/error_messages', object: f.object %>
-
-        <div class = 'form-group'>
-          <%= f.text_area :content, class: 'form-control', placeholder: "コメントを記入してください" %>
+    <div class = "comments-area">
+      <% @comments.each do |comment| %>
+        <div class = "comment">
+          <% unless comment.user.blank? %>
+            <a href="<%= user_path(comment.user_id) %>">
+              <%= gravatar_for @user, size: 53, class:"rounded-circle icon_image mr-3 mb-3"%>
+            </a>
+          <% end %>
+          <%= comment.user.name unless comment.user.blank? %>
+          <br />
+          <%= comment.content %>
+          <%= link_to '削除', post_comment_path(@post, comment), method: :delete %>
         </div>
-
-        <%= f.submit "コメントする", class: "btn btn-primary" %>
+        <br />
+      <% end %>
+    </div>
+    <% if logged_in? %>
+      <%= form_with(model: [@post, @comment], local: true) do |f| %>
+        <%= f.text_area :content, class: "form-control", rows: 5, placeholder: "コメントを記入してください" %>
+        <%= button_tag type: "submit", class: "btn btn-success float-right mt-1" do %>
+          <i class="far fa-comments"></i> コメントする
+        <% end %>
+      <% end %>
     <% end %>
   </div>
 <div>

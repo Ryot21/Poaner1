@@ -18,5 +18,22 @@
         <%= image_tag @post.image.url %>
       <% end %>
     </div>
+    
+    <h2>コメント一覧</h2>
+    <% @comments.each do |comment| %>
+    <%= comment.user.name %>
+    <%= comment.content %>
+    <%= link_to '削除', post_comment_path(@post, comment), method: :delete %>
+    <% end %>
+
+    <%= form_with model: [@post, @comment], local: true do |f| %>
+      <%= render 'shared/error_messages', object: f.object %>
+
+        <div class = 'form-group'>
+          <%= f.text_area :content, class: 'form-control', placeholder: "コメントを記入してください" %>
+        </div>
+
+        <%= f.submit "コメントする", class: "btn btn-primary" %>
+    <% end %>
   </div>
 <div>

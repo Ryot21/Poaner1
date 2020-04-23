@@ -29,9 +29,9 @@
             </a>
           <% end %>
           <%= comment.user.name unless comment.user.blank? %>
+          <%= link_to '削除', post_comment_path(@post, comment), method: :delete %>
           <br />
           <%= comment.content %>
-          <%= link_to '削除', post_comment_path(@post, comment), method: :delete %>
         </div>
         <br />
       <% end %>

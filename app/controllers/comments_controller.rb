@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @comment.destroy
     flash[:success] = 'コメントを削除しました'
-    redirect_to @comment.micropost
+    redirect_to @comment.post
   end
 
 

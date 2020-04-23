@@ -19,6 +19,8 @@ class PostsController < ApplicationController
   def show
     @user = User.find_by(params[:id])
     @post = Post.find(params[:id])
+    @comment = Comment.new
+    @comments = @post.comments #コメント表示用投稿に関連づくコメントの取得
   end
 
   def edit

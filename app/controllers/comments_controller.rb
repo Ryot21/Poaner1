@@ -10,16 +10,15 @@ class CommentsController < ApplicationController
       flash[:success] = 'コメントしました'
       redirect_to @comment.post
     else
-      @post = Post.find(params[:post_id])  
-      @comments = @post.comments
-      render template: 'posts/show'
+      flash[:danger] = 'コメント出来ません'
+      redirect_to @comment.post
     end
   end
 
   def destroy
     @comment = Comment.find(params[:id])
     @comment.destroy
-    flash[:success] = 'コメントを削除しました'
+    flash[:danger] = 'コメントを削除しました'
     redirect_to @comment.post
   end
 

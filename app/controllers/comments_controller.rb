@@ -10,7 +10,7 @@ class CommentsController < ApplicationController
       flash[:success] = 'コメントしました'
       redirect_to @comment.post
     else
-      @post = Post.find(params[:micropost_id])  
+      @post = Post.find(params[:post_id])  
       @comments = @post.comments
       render template: 'posts/show'
     end

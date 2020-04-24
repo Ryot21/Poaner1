@@ -25,7 +25,7 @@
         <div class = "comment">
           <% unless comment.user.blank? %>
             <a href="<%= user_path(comment.user_id) %>">
-              <%= gravatar_for @user, size: 53, class:"rounded-circle icon_image mr-3 mb-3"%>
+              <%# <%= gravatar_for @user, size: 53, class:"rounded-circle icon_image mr-3 mb-3"%>
             </a>
           <% end %>
           <%= comment.user.name unless comment.user.blank? %>

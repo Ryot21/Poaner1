@@ -30,8 +30,11 @@
           <% end %>
           <%= comment.user.name unless comment.user.blank? %>
           <%= link_to '削除', post_comment_path(@post, comment), method: :delete %>
+          <%= comment.created_at %>
+          <br />
           <br />
           <%= comment.content %>
+          <br />
         </div>
         <br />
       <% end %>
